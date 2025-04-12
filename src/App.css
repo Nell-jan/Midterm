@@ -6,13 +6,27 @@ body {
 .country-list-container {
   height: 500px;
   overflow-y: auto;
+  border-radius: 0.25rem;
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.075);
 }
 
 .country-flag {
   border: 1px solid #dee2e6;
+  border-radius: 0.25rem;
+  max-width: 100%;
+  height: auto;
 }
 
-/* For responsive design */
+.country-card {
+  transition: transform 0.2s;
+  cursor: pointer;
+}
+
+.country-card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+}
+
 @media (max-width: 767px) {
   .country-list-container {
     height: 300px;
